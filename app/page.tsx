@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Github, Linkedin, Mail, ExternalLink, Play, Code, Gamepad2, Zap, Palette, Cpu } from "lucide-react"
+import Link from "next/link"
 
 export default function GameDevPortfolio() {
   const [activeSection, setActiveSection] = useState("hero")
@@ -173,11 +174,13 @@ export default function GameDevPortfolio() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
               <Button
                 size="lg"
-                onClick={() => scrollToSection("projects")}
+                asChild
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
               >
-                <Play className="mr-2 h-5 w-5" />
-                View My Games
+                <Link href="/play" className="flex items-center">
+                  <Play className="mr-2 h-5 w-5" />
+                  Play Demo
+                </Link>
               </Button>
               <Button
                 size="lg"
@@ -295,9 +298,11 @@ export default function GameDevPortfolio() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <div className="flex space-x-4">
-                          <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
-                            <Play className="mr-2 h-4 w-4" />
-                            Play
+                          <Button size="sm" asChild className="bg-purple-600 hover:bg-purple-700">
+                            <Link href="/play" className="flex items-center">
+                              <Play className="mr-2 h-4 w-4" />
+                              Play
+                            </Link>
                           </Button>
                           <Button
                             size="sm"
