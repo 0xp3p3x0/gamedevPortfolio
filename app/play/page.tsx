@@ -1,10 +1,13 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useSearchParams } from "next/navigation"
 import GameCanvas from "@/components/GameCanvas"
 
 export default function GameDevPortfolioPlay() {
   const [activeSection, setActiveSection] = useState("hero")
+  const [gameUrl, setGameUrl] = useState<string | null>(null)
+  const searchParams = useSearchParams()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +31,20 @@ export default function GameDevPortfolioPlay() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  useEffect(() => {
+    const id = searchParams.get("id")
+    if (!id) return
+
+    fetch(`/api/play/${id}`, { method: "POST" })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.gameurl) {
+          setGameUrl(data.gameurl)
+        }
+      })
+      .catch(() => setGameUrl(null))
+  }, [searchParams])
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
@@ -62,7 +79,14 @@ export default function GameDevPortfolioPlay() {
       {/* Canvas Section */}
       <section id="hero" className="pt-24 container mx-auto px-4">
         <h2 className="text-4xl font-bold text-white text-center mb-4">Play</h2>
-        <GameCanvas />
+        {gameUrl ? (
+          <iframe
+            src={gameUrl}
+            className="w-full h-[600px] mx-auto my-8 bg-black rounded shadow-md"
+          />
+        ) : (
+          <GameCanvas />
+        )}
       </section>
     </div>
   )
