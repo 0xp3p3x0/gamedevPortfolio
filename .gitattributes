@@ -1,1 +1,2 @@
+*.pck filter=lfs diff=lfs merge=lfs -text
 public/assets/games/airsimulator/intellisphere.pck filter=lfs diff=lfs merge=lfs -text
