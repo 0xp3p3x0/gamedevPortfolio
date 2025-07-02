@@ -295,9 +295,11 @@ export default function GameDevPortfolio() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <div className="flex space-x-4">
-                          <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
-                            <Play className="mr-2 h-4 w-4" />
-                            Play
+                          <Button size="sm" asChild className="bg-purple-600 hover:bg-purple-700">
+                            <a href={`/play?id=${index}`}> 
+                              <Play className="mr-2 h-4 w-4" />
+                              Play
+                            </a>
                           </Button>
                           <Button
                             size="sm"
