@@ -54,12 +54,12 @@ export default function GameDevPortfolio() {
 
   const projects = [
     {
-      title: "Space Explorer",
+      title: "Air Simulator",
       description:
         "A 2D space exploration game built with HTML5 Canvas and JavaScript. Features procedural generation, physics simulation, and particle effects.",
       image: "/placeholder.svg?height=200&width=300",
       technologies: ["HTML5 Canvas", "JavaScript", "Web Audio API"],
-      demoUrl: "#",
+      demoUrl: "airsimulator",
       codeUrl: "#",
       featured: true,
     },
@@ -296,7 +296,7 @@ export default function GameDevPortfolio() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <div className="flex space-x-4">
                           <Button size="sm" asChild className="bg-purple-600 hover:bg-purple-700">
-                            <a href={`/play?id=${index}`}> 
+                            <a href={`/play?id=${project.demoUrl}`}> 
                               <Play className="mr-2 h-4 w-4" />
                               Play
                             </a>
