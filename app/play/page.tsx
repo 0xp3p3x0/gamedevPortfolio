@@ -9,6 +9,7 @@ export default function GameDevPortfolioPlay() {
   const [activeSection, setActiveSection] = useState("hero")
   const [gameUrl, setGameUrl] = useState<string | null>(null)
   const searchParams = useSearchParams()
+  const id = searchParams.get("id")
   const router = useRouter(); // Access the router
 
   // Function to handle navigation
@@ -42,9 +43,10 @@ export default function GameDevPortfolioPlay() {
   }, [])
 
   useEffect(() => {
-    const id = searchParams.get("id")
-    if (!id) return
-
+    if (!id) {
+      setGameUrl(null)
+      return
+    }
     fetch(`/api/play/${id}`, { method: "POST" })
       .then((res) => res.json())
       .then((data) => {
@@ -53,7 +55,7 @@ export default function GameDevPortfolioPlay() {
         }
       })
       .catch(() => setGameUrl(null))
-  })
+  }, [id])
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
