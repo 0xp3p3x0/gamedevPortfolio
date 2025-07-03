@@ -1,14 +1,23 @@
-"use client"
+"use client";
 
+import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 import { useEffect, useState } from "react"
-import { useSearchParams } from "next/navigation"
 import GameCanvas from "@/components/GameCanvas"
+
 
 export default function GameDevPortfolioPlay() {
   const [activeSection, setActiveSection] = useState("hero")
   const [gameUrl, setGameUrl] = useState<string | null>(null)
   const searchParams = useSearchParams()
+  const router = useRouter(); // Access the router
 
+  // Function to handle navigation
+  const handleNavigation = (section: string) => {
+    if (section === "hero") {
+      router.push('/'); // Navigate to the home page
+    }
+    // Add more conditions if you have other sections or pages
+  };
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["hero"]
@@ -44,7 +53,7 @@ export default function GameDevPortfolioPlay() {
         }
       })
       .catch(() => setGameUrl(null))
-  }, [searchParams])
+  })
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
@@ -64,8 +73,9 @@ export default function GameDevPortfolioPlay() {
               {["hero"].map((section) => (
                 <button
                   key={section}
-                  onClick={() => scrollToSection(section)}
-                  className={`capitalize transition-colors ${activeSection === section ? "text-purple-400" : "text-white hover:text-purple-300"}`}
+                  onClick={() => handleNavigation(section)} // Call the handleNavigation function
+                  className={`capitalize transition-colors ${activeSection === section ? "text-purple-400" : "text-white hover:text-purple-300"
+                    }`}
                 >
                   Home
                 </button>
@@ -78,7 +88,7 @@ export default function GameDevPortfolioPlay() {
 
       {/* Canvas Section */}
       <section id="hero" className="pt-24 container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-white text-center mb-4">Play</h2>
+        <h2 className="text-4xl font-bold text-white text-center mb-4">Welcome to my games</h2>
         {gameUrl ? (
           <iframe
             src={gameUrl}

@@ -1,0 +1,56 @@
+{
+  "light": {
+    "hp": 60,
+    "speed": 20,
+    "damage": 1,
+    "fireRange": 250,
+    "fireRate": 0.5,
+    "type": "ground",
+    "armor": 0
+  },
+  "medium": {
+    "hp": 200,
+    "speed": 10,
+    "damage": 5,
+    "fireRange": 300,
+    "fireRate": 1,
+    "type": "ground",
+    "armor": 10
+  },
+  "heavy": {
+    "hp": 300,
+    "speed": 5,
+    "damage": 10,
+    "fireRange": 250,
+    "fireRate": 3,
+    "type": "ground",
+    "armor": 25
+  },
+  "air": {
+    "hp": 60,
+    "speed": 40,
+    "damage": 5,
+    "fireRange": 300,
+    "type": "air",
+    "fireRate": 1,
+    "armor": 0
+  },
+  "airHeavy": {
+    "hp": 80,
+    "speed": 20,
+    "damage": 10,
+    "fireRange": 350,
+    "type": "air",
+    "fireRate": 1,
+    "armor": 0
+  },
+  "artillery": {
+    "hp": 100,
+    "speed": 5,
+    "damage": 20,
+    "fireRange": 600,
+    "type": "ground",
+    "fireRate": 5,
+    "armor": 0
+  }
+}

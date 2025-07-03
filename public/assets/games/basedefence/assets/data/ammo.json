@@ -1,0 +1,81 @@
+{
+  "ammo": {
+    "artillery": {
+      "default": {
+        "speed": 1000,
+        "damage": 600,
+        "splashRadius": 150,
+        "rangeMod": 0,
+        "type": "ground"
+      }
+    },
+    "machineGun": {
+      "default": {
+        "speed": 1000,
+        "damage": 20,
+        "rangeMod": 0,
+        "type": "ground"
+      },
+      "ap": {
+        "speed": 720,
+        "damage": 25,
+        "ap": 0.5,
+        "rangeMod": 0,
+        "type": "ground"
+      },
+      "aa": {
+        "speed": 1500,
+        "damage": 25,
+        "ap": 0,
+        "rangeMod": 0,
+        "type": "air"
+      }
+    },
+    "railgun": {
+      "default": {
+        "speed": 1500,
+        "damage": 300,
+        "rangeMod": 0,
+        "type": "ground"
+      },
+      "explosive": {
+        "speed": 1000,
+        "damage": 200,
+        "splashRadius": 50,
+        "rangeMod": 0,
+        "type": "ground"
+      },
+      "ap": {
+        "speed": 2000,
+        "damage": 150,
+        "ap": 1,
+        "rangeMod": 0,
+        "type": "ground"
+      }
+    },
+    "flakCannon": {
+      "default": {
+        "speed": 400,
+        "damage": 150,
+        "splashRadius": 1,
+        "rangeMod": 0,
+        "type": "air"
+      }
+    },
+    "plasmaCannon": {
+      "default": {
+        "speed": 1500,
+        "damage": 500,
+        "ap": 1,
+        "rangeMod": 0,
+        "type": "ground"
+      },
+      "aa": {
+        "speed": 1400,
+        "damage": 600,
+        "rangeMod": 0,
+        "type": "air"
+      }
+    }
+  }
+}

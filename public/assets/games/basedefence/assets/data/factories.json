@@ -1,0 +1,22 @@
+{
+  "machineGun": {
+    "rate": 1,
+    "scale": 10
+  },
+  "plasmaCannon": {
+    "rate": 10,
+    "scale": 10
+  },
+  "flakCannon": {
+    "rate": 1,
+    "scale": 5
+  },
+  "railgun": {
+    "rate": 3,
+    "scale": 5
+  },
+  "artillery": {
+    "rate": 5,
+    "scale": 10
+  }
+}

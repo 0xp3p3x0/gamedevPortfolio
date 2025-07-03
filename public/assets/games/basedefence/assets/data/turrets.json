@@ -1,0 +1,40 @@
+{
+  "artillery": {
+    "range": 800,
+    "minRange": 300,
+    "fireRate": 0.5,
+    "ammoSizeLoad": 5,
+    "ammoMaxLoad": 100,
+    "spread": 1
+  },
+  "machineGun": {
+    "range": 2000,
+    "minRange": 0,
+    "fireRate": 0.1,
+    "ammoSizeLoad": 100,
+    "ammoMaxLoad": 1000,
+    "spread": 8
+  },
+  "flakCannon": {
+    "minRange": 0,
+    "range": 1000,
+    "fireRate": 0.1,
+    "ammoSizeLoad": 100,
+    "ammoMaxLoad": 1000,
+    "spread": 0.5
+  },
+  "railgun": {
+    "range": 1000,
+    "fireRate": 1,
+    "ammoSizeLoad": 5,
+    "ammoMaxLoad": 100,
+    "spread": 0.5
+  },
+  "plasmaCannon": {
+    "range": 2000,
+    "fireRate": 1,
+    "ammoSizeLoad": 10,
+    "ammoMaxLoad": 100,
+    "spread": 5
+  }
+}

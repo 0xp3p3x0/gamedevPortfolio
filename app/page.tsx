@@ -7,10 +7,22 @@ import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Github, Linkedin, Mail, ExternalLink, Play, Code, Gamepad2, Zap, Palette, Cpu } from "lucide-react"
+import { useRouter, usePathname, useSearchParams } from 'next/navigation'
 
 export default function GameDevPortfolio() {
   const [activeSection, setActiveSection] = useState("hero")
+  const router = useRouter(); // Access the router
 
+  // Function to handle navigation
+  const handleNavigation = (section: string) => {
+    if (section === "hero") {
+      router.push('/'); // Navigate to the home page
+    }
+    else {
+      router.push('/play?id=' + section); // Navigate to the play page with the section id
+    }
+    // Add more conditions if you have other sections or pages
+  };
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["hero", "about", "skills", "projects", "contact"]
@@ -57,19 +69,19 @@ export default function GameDevPortfolio() {
       title: "Air Simulator",
       description:
         "A 2D space exploration game built with HTML5 Canvas and JavaScript. Features procedural generation, physics simulation, and particle effects.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "assets/games/airsimulator/image.png",
       technologies: ["HTML5 Canvas", "JavaScript", "Web Audio API"],
       demoUrl: "airsimulator",
       codeUrl: "#",
       featured: true,
     },
     {
-      title: "Puzzle Master",
+      title: "Buidling Kingdom",
       description:
         "An engaging puzzle game with 50+ levels, smooth animations, and responsive design. Built using modern web technologies.",
       image: "/placeholder.svg?height=200&width=300",
       technologies: ["TypeScript", "CSS3 Animations", "Local Storage"],
-      demoUrl: "#",
+      demoUrl: "kingdom",
       codeUrl: "#",
       featured: true,
     },
@@ -120,11 +132,11 @@ export default function GameDevPortfolio() {
       featured: false,
     },
     {
-      title: "Tower Defense Pro1",
+      title: "Base Defense",
       description: "Strategic tower defense game with AI enemies, upgrade systems, and beautiful particle effects.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "assets/games/basedefence/image.png",
       technologies: ["HTML5 Canvas", "ES6+", "Web Workers"],
-      demoUrl: "#",
+      demoUrl: "basedefence",
       codeUrl: "#",
       featured: false,
     },
@@ -143,9 +155,8 @@ export default function GameDevPortfolio() {
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
-                  className={`capitalize transition-colors ${
-                    activeSection === section ? "text-purple-400" : "text-white hover:text-purple-300"
-                  }`}
+                  className={`capitalize transition-colors ${activeSection === section ? "text-purple-400" : "text-white hover:text-purple-300"
+                    }`}
                 >
                   {section === "hero" ? "Home" : section}
                 </button>
@@ -296,7 +307,7 @@ export default function GameDevPortfolio() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                         <div className="flex space-x-4">
                           <Button size="sm" asChild className="bg-purple-600 hover:bg-purple-700">
-                            <a href={`/play?id=${project.demoUrl}`}> 
+                            <a href={`/play?id=${project.demoUrl}`}>
                               <Play className="mr-2 h-4 w-4" />
                               Play
                             </a>
@@ -351,7 +362,7 @@ export default function GameDevPortfolio() {
                     <CardContent>
                       <p className="text-gray-300 text-sm mb-3">{project.description}</p>
                       <div className="flex space-x-2">
-                        <Button size="sm" className="bg-purple-600 hover:bg-purple-700 flex-1">
+                        <Button size="sm" className="bg-purple-600 hover:bg-purple-700 flex-1" onClick={() => handleNavigation(project.demoUrl)}>
                           <ExternalLink className="mr-1 h-3 w-3" />
                           Demo
                         </Button>

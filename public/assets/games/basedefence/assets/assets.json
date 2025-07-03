@@ -1,0 +1,519 @@
+[
+  {
+    "path": "assets/data",
+    "files": [
+      {
+        "type": "json",
+        "key": "ammo",
+        "url": "ammo.json"
+      },
+      {
+        "type": "json",
+        "key": "turrets",
+        "url": "turrets.json"
+      },
+      {
+        "type": "json",
+        "key": "units",
+        "url": "units.json"
+      },
+      {
+        "type": "json",
+        "key": "factories",
+        "url": "factories.json"
+      },
+      {
+        "type": "json",
+        "key": "waveTemplates",
+        "url": "waveTemplates.json"
+      }
+    ]
+  },
+  {
+    "path": "assets/sounds",
+    "files": [
+      {
+        "type": "audio",
+        "key": "switch",
+        "url": "switch.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "ambient",
+        "url": "ambient.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "btnOver",
+        "url": "btnOver.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "btnPress",
+        "url": "btnPress.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "btnUiOver",
+        "url": "btnUiOver.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "softAlert",
+        "url": "softAlert.mp3"
+      },
+      {
+        "type": "audio",
+        "key": "btnUiPress",
+        "url": "btnUiPress.mp3"
+      }
+    ]
+  },
+  {
+    "path": "assets/textures",
+    "files": [
+      {
+        "type": "image",
+        "key": "projectile",
+        "url": "projectile.png"
+      },
+      {
+        "type": "image",
+        "key": "pixel_proj",
+        "url": "pixel_proj.png"
+      },
+      {
+        "type": "image",
+        "key": "map",
+        "url": "mapTest.png"
+      },
+      {
+        "type": "image",
+        "key": "grid",
+        "url": "grid.png"
+      },
+      {
+        "type": "image",
+        "key": "base",
+        "url": "base.png"
+      }
+    ]
+  },
+  {
+    "path": "assets/textures/tutorial",
+    "files": [
+      {
+        "type": "image",
+        "key": "turretHelp",
+        "url": "turret.png"
+      }
+    ]
+  },
+  {
+    "path": "assets/textures/units",
+    "files": [
+      {
+        "type": "image",
+        "key": "u_air",
+        "url": "air.png"
+      },
+      {
+        "type": "image",
+        "key": "u_airHeavy",
+        "url": "airHeavy.png"
+      },
+      {
+        "type": "image",
+        "key": "u_artillery",
+        "url": "artillery.png"
+      },
+      {
+        "type": "image",
+        "key": "u_light",
+        "url": "light.png"
+      },
+      {
+        "type": "image",
+        "key": "u_medium",
+        "url": "medium.png"
+      },
+      {
+        "type": "image",
+        "key": "u_heavy",
+        "url": "heavy.png"
+      }
+    ]
+  },
+  {
+    "path": "assets/textures/icons",
+    "files": [
+      {
+        "type": "image",
+        "key": "icon_reload",
+        "url": "reload.png"
+      },
+      {
+        "type": "image",
+        "key": "icon_reload_mask",
+        "url": "reload_mask.png"
+      },
+      {
+        "type": "image",
+        "key": "icon_armor",
+        "url": "armor.png"
+      }
+    ]
+  },
+  {
+    "path": "assets/textures/turrets",
+    "files": [
+      {
+        "type": "image",
+        "key": "machineGun",
+        "url": "machineGun.png"
+      },
+      {
+        "type": "image",
+        "key": "machineGun_ui",
+        "url": "machineGun_ui.png"
+      },
+      {
+        "type": "image",
+        "key": "artillery",
+        "url": "artillery.png"
+      },
+      {
+        "type": "image",
+        "key": "artillery_ui",
+        "url": "artillery_ui.png"
+      },
+      {
+        "type": "image",
+        "key": "plasmaCannon",
+        "url": "plasmaCannon.png"
+      },
+      {
+        "type": "image",
+        "key": "plasmaCannon_ui",
+        "url": "plasmaCannon_ui.png"
+      },
+      {
+        "type": "image",
+        "key": "railgun",
+        "url": "railgun.png"
+      },
+      {
+        "type": "image",
+        "key": "railgun_ui",
+        "url": "railgun_ui.png"
+      },
+      {
+        "type": "image",
+        "key": "flakCannon",
+        "url": "flakCannon.png"
+      },
+      {
+        "type": "image",
+        "key": "flakCannon_ui",
+        "url": "flakCannon_ui.png"
+      }
+    ]
+  },
+  {
+    "path": "assets/textures/ui/turretPanel",
+    "files": [
+      {
+        "type": "image",
+        "key": "turret_panel",
+        "url": "turret_panel.png"
+      },
+      {
+        "type": "image",
+        "key": "load_normal",
+        "url": "load_normal.png"
+      },
+      {
+        "type": "image",
+        "key": "load_over",
+        "url": "load_over.png"
+      },
+      {
+        "type": "image",
+        "key": "load_pressed",
+        "url": "load_pressed.png"
+      },
+      {
+        "type": "image",
+        "key": "unload_normal",
+        "url": "unload_normal.png"
+      },
+      {
+        "type": "image",
+        "key": "unload_over",
+        "url": "unload_over.png"
+      },
+      {
+        "type": "image",
+        "key": "unload_pressed",
+        "url": "unload_pressed.png"
+      },
+      {
+        "type": "image",
+        "key": "auto_load",
+        "url": "auto_load.png"
+      },
+
+      {
+        "type": "image",
+        "key": "auto_load_over",
+        "url": "auto_load_over.png"
+      },
+      {
+        "type": "image",
+        "key": "auto_load_pressed",
+        "url": "auto_load_pressed.png"
+      },
+      {
+        "type": "image",
+        "key": "turret_range",
+        "url": "turret_range.png"
+      },
+      {
+        "type": "image",
+        "key": "turret_range_over",
+        "url": "turret_range_over.png"
+      },
+      {
+        "type": "image",
+        "key": "turret_range_pressed",
+        "url": "turret_range_pressed.png"
+      },
+      {
+        "type": "image",
+        "key": "turret_changeAmmo",
+        "url": "turret_changeAmmo.png"
+      },
+      {
+        "type": "image",
+        "key": "turret_changeAmmo_over",
+        "url": "turret_changeAmmo_over.png"
+      },
+      {
+        "type": "image",
+        "key": "turret_changeAmmo_pressed",
+        "url": "turret_changeAmmo_pressed.png"
+      }
+    ]
+  },
+  {
+    "path": "assets/textures/ui/controlPanel",
+    "files": [
+      {
+        "type": "image",
+        "key": "controlPanel",
+        "url": "controlPanel.png"
+      },
+      {
+        "type": "image",
+        "key": "mainScreen",
+        "url": "mainScreen.png"
+      },
+
+      {
+        "type": "image",
+        "key": "controlPanel_time",
+        "url": "controlPanel_time.png"
+      },
+      {
+        "type": "image",
+        "key": "controlPanel_timer",
+        "url": "controlPanel_timer.png"
+      },
+      {
+        "type": "image",
+        "key": "infoPanel",
+        "url": "infoPanel.png"
+      },
+      {
+        "type": "image",
+        "key": "pause_normal",
+        "url": "pause_normal.png"
+      },
+      {
+        "type": "image",
+        "key": "pause_over",
+        "url": "pause_over.png"
+      },
+      {
+        "type": "image",
+        "key": "pause_pressed",
+        "url": "pause_pressed.png"
+      },
+      {
+        "type": "image",
+        "key": "speed_slow",
+        "url": "speed_slow.png"
+      },
+      {
+        "type": "image",
+        "key": "speed_slow_over",
+        "url": "speed_slow_over.png"
+      },
+      {
+        "type": "image",
+        "key": "speed_slow_pressed",
+        "url": "speed_slow_pressed.png"
+      },
+      {
+        "type": "image",
+        "key": "speed_normal",
+        "url": "speed_normal.png"
+      },
+      {
+        "type": "image",
+        "key": "speed_normal_over",
+        "url": "speed_normal_over.png"
+      },
+      {
+        "type": "image",
+        "key": "speed_normal_pressed",
+        "url": "speed_normal_pressed.png"
+      },
+      {
+        "type": "image",
+        "key": "speed_fast",
+        "url": "speed_fast.png"
+      },
+      {
+        "type": "image",
+        "key": "speed_fast_over",
+        "url": "speed_fast_over.png"
+      },
+      {
+        "type": "image",
+        "key": "speed_fast_pressed",
+        "url": "speed_fast_pressed.png"
+      },
+      {
+        "type": "image",
+        "key": "mainMenu",
+        "url": "mainMenu.png"
+      },
+      {
+        "type": "image",
+        "key": "mainMenu_over",
+        "url": "mainMenu_over.png"
+      },
+      {
+        "type": "image",
+        "key": "mainMenu_pressed",
+        "url": "mainMenu_pressed.png"
+      }
+    ]
+  },
+  {
+    "path": "assets/textures/ui/factoriesPanel",
+    "files": [
+      {
+        "type": "image",
+        "key": "factoriesPanel",
+        "url": "factoriesPanel.png"
+      },
+      {
+        "type": "image",
+        "key": "factoryUi",
+        "url": "factoryUi.png"
+      },
+      {
+        "type": "image",
+        "key": "addWorker",
+        "url": "addWorker.png"
+      },
+      {
+        "type": "image",
+        "key": "addWorker_over",
+        "url": "addWorker_over.png"
+      },
+      {
+        "type": "image",
+        "key": "addWorker_pressed",
+        "url": "addWorker_pressed.png"
+      },
+      {
+        "type": "image",
+        "key": "removeWorker",
+        "url": "removeWorker.png"
+      },
+      {
+        "type": "image",
+        "key": "removeWorker_over",
+        "url": "removeWorker_over.png"
+      },
+      {
+        "type": "image",
+        "key": "removeWorker_pressed",
+        "url": "removeWorker_pressed.png"
+      },
+      {
+        "type": "image",
+        "key": "changeTask",
+        "url": "changeTask.png"
+      },
+      {
+        "type": "image",
+        "key": "changeTask_over",
+        "url": "changeTask_over.png"
+      },
+      {
+        "type": "image",
+        "key": "changeTask_pressed",
+        "url": "changeTask_pressed.png"
+      }
+    ]
+  },
+  {
+    "path": "assets/textures/ui/warehousePanel",
+    "files": [
+      {
+        "type": "image",
+        "key": "warehousePanel",
+        "url": "warehousePanel.png"
+      },
+      {
+        "type": "image",
+        "key": "warehouseScreen",
+        "url": "warehouseScreen.png"
+      },
+      {
+        "type": "image",
+        "key": "warehouseToggle",
+        "url": "warehouseToggle.png"
+      },
+      {
+        "type": "image",
+        "key": "warehouseToggle_over",
+        "url": "warehouseToggle_over.png"
+      },
+      {
+        "type": "image",
+        "key": "warehouseToggle_pressed",
+        "url": "warehouseToggle_pressed.png"
+      },
+      {
+        "type": "image",
+        "key": "databaseBtn",
+        "url": "databaseBtn.png"
+      },
+      {
+        "type": "image",
+        "key": "databaseBtn_over",
+        "url": "databaseBtn_over.png"
+      },
+      {
+        "type": "image",
+        "key": "databaseBtn_pressed",
+        "url": "databaseBtn_pressed.png"
+      }
+    ]
+  }
+]
