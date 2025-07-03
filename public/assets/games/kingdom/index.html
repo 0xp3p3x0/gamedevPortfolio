@@ -283,6 +283,24 @@
 </head>
 
 <body class="center-screen">
+    <div id="footer-placeholder"></div><span id="loader"></span>
+    <article id="status"><noscript>Please enable javascript to play this game.</noscript></article>
+    <div id="phaser-game" class="hidden"></div>
+    <div id="news-box">
+        <article id="news-box-body">
+            <p class="posted-at">Jun 23, 2025</p>
+            <h3><a href='/update/2025/06/23/numbers-are-in'>🖩 The numbers are in!</a></h3>
+            <p>You can now press the [Q] key while playing to show treasure+income preview for each province directly on
+                the map!</p>
+
+
+
+        </article>
+        <footer></footer>
+    </div>
+    <div id="file-drop-zone" class="hidden">
+        <div><span>+ IMPORT DATA</span></div>
+    </div>
     <script>const BUILD_NUMBER = '2.35.23'
         const SW_ENABLE = true
 
@@ -309,12 +327,7 @@
 
         // if news-box has no content, inject warning
         const newsBox = document.getElementById('news-box-body')
-        if (newsBox?.innerText.startsWith(' + ')) {
-            newsBox.innerHTML = `<article><b>⚠ Warning:</b> Playing unsupported game version</p><p><code>${BUILD_NUMBER}</code></p>
-                         <p>Visit <a href='https://www.konkr.io'>www.konkr.io</a> to play the latest stable release.<br/>
-                         Or don't, I'm not your boss, but proceed with caution.</p></article>`
-        }
-
+        
         setLoadingStatus('loading game...')
 
         window.addEventListener('DOMContentLoaded', () => boot())
