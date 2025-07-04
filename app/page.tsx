@@ -79,19 +79,19 @@ export default function GameDevPortfolio() {
       title: "Buidling Kingdom",
       description:
         "An engaging puzzle game with 50+ levels, smooth animations, and responsive design. Built using modern web technologies.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "assets/games/kingdom/image.png",
       technologies: ["TypeScript", "CSS3 Animations", "Local Storage"],
       demoUrl: "kingdom",
       codeUrl: "#",
       featured: true,
     },
     {
-      title: "Racing Championship",
+      title: "Water Works",
       description:
         "A fast-paced racing game with realistic physics, multiple tracks, and multiplayer support using WebRTC.",
       image: "/placeholder.svg?height=200&width=300",
       technologies: ["WebGL", "Three.js", "WebRTC", "Socket.io"],
-      demoUrl: "#",
+      demoUrl: "waterworks",
       codeUrl: "#",
       featured: false,
     },
@@ -168,7 +168,7 @@ export default function GameDevPortfolio() {
 
       {/* Hero Section */}
       <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0] bg-cover bg-center opacity-10"></div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
