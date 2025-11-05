@@ -96,11 +96,11 @@ export default function GameDevPortfolio() {
       featured: false,
     },
     {
-      title: "Tower Defense Pro5",
+      title: "Age of War",
       description: "Strategic tower defense game with AI enemies, upgrade systems, and beautiful particle effects.",
       image: "/placeholder.svg?height=200&width=300",
       technologies: ["HTML5 Canvas", "ES6+", "Web Workers"],
-      demoUrl: "#",
+      demoUrl: "ageofwar",
       codeUrl: "#",
       featured: false,
     },
