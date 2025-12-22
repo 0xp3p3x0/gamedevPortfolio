@@ -89,7 +89,7 @@ export default function GameDevPortfolio() {
       title: "Water Works",
       description:
         "A fast-paced racing game with realistic physics, multiple tracks, and multiplayer support using WebRTC.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "assets/games/waterworks/image.png",
       technologies: ["WebGL", "Three.js", "WebRTC", "Socket.io"],
       demoUrl: "waterworks",
       codeUrl: "#",
@@ -98,7 +98,7 @@ export default function GameDevPortfolio() {
     {
       title: "Age of War",
       description: "Strategic tower defense game with AI enemies, upgrade systems, and beautiful particle effects.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "assets/games/ageofwar/image.png",
       technologies: ["HTML5 Canvas", "ES6+", "Web Workers"],
       demoUrl: "ageofwar",
       codeUrl: "#",
@@ -107,7 +107,7 @@ export default function GameDevPortfolio() {
     {
       title: "Strike Heros",
       description: "Strategic tower defense game with AI enemies, upgrade systems, and beautiful particle effects.",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "assets/games/strikeheros/image.png",
       technologies: ["HTML5 Canvas", "ES6+", "Web Workers"],
       demoUrl: "strikeheros",
       codeUrl: "#",
@@ -210,7 +210,7 @@ export default function GameDevPortfolio() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-black/20">
+      <section id="about" className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-white mb-8">About Me</h2>
@@ -286,7 +286,7 @@ export default function GameDevPortfolio() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-black/20">
+      <section id="projects" className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold text-white text-center mb-12">Featured Games</h2>
@@ -445,7 +445,7 @@ export default function GameDevPortfolio() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 bg-black/40 border-t border-white/10">
+      <footer className="py-8  border-t border-white/10">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-400">
             © 2024 HTML5 Game Developer. Built with passion for gaming and web technologies.
